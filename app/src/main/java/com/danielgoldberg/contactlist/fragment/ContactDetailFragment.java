@@ -70,7 +70,7 @@ public class ContactDetailFragment extends Fragment {
             contactFavorite = (CheckBox)rootView.findViewById(R.id.contact_favorite);
             contactProgressBar = (ProgressBar)rootView.findViewById(R.id.contact_progressbar);
             setName();
-            setPhoto(contact.getSmallImageURL());
+            //setPhoto(contact.getSmallImageURL()); If we want to see small photo first
             setPhones();
             setBirthdate();
             setCompany();

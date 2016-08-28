@@ -4,7 +4,6 @@ import android.app.Application;
 
 import com.danielgoldberg.contactlist.service.ContactListService;
 import com.facebook.drawee.backends.pipeline.Fresco;
-import com.facebook.stetho.Stetho;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -25,7 +24,6 @@ public class ContactListApplication extends Application {
     public void onCreate() {
         super.onCreate();
         Fresco.initialize(this);
-        Stetho.initializeWithDefaults(this);
         ContactListApplication.setupServices();
     }
 }
